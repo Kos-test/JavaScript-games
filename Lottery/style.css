@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#allButtonsField{
+    width: 700px;
+    height: 600px;
+    float: left;
+    background: url("images/bg_1.png");
+}
+
+input{
+    width:  212px;
+    height: 60px;
+    outline: none;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 0px;
+    position: absolute;
+	
+}
+
+.oneLine{
+    background: url("buttons/5.png");
+	-webkit-animation: lighter 1s linear .200s infinite;
+	animation: lighter 1s linear .200s infinite;
+	-webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.twoLine{
+    background: url("buttons/10.png");
+	-webkit-animation: lighter 1s linear .200s infinite;
+	animation: lighter 1s linear .200s infinite;
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.treeLine{
+    background: url("buttons/15.png");
+	-webkit-animation: lighter 1s linear .200s infinite;
+	animation: lighter 1s linear .200s infinite;
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.fourLine{
+    background: url("buttons/20.png");
+	-webkit-animation: lighter 1s linear .200s infinite;
+	animation: lighter 1s linear .200s infinite;
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.fiveLine{
+    background: url("buttons/25.png");
+	-webkit-animation: lighter 1s linear .200s infinite;
+	animation: lighter 1s linear .200s infinite;
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.sixLine{
+    background: url("buttons/35.png");
+	-webkit-animation: lighter 1s linear .200s infinite;
+	animation: lighter 1s linear .200s infinite;
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.sevenLine{
+    background: url("buttons/50.png");
+	-webkit-animation: lighter 1s linear .200s infinite;
+	animation: lighter 1s linear .200s infinite;
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+
+
+#catchMyMoney, #totalCoins{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Arial;
+    top: 508px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    position: fixed;
+}
+
+#result{
+    width: 700px;
+    height: 600px;
+    background: url("images/bgRes2.png");
+    z-index: 2;
+    position: absolute;
+    display: none;
+	color: white;
+	font-size:30px;
+	text-align: center;
+}
+
+
+#userPoor{
+	width: 700px;
+    height: 600px;
+	background: rgba(0, 0, 0, 0.68);
+	border-radius:15px;
+	position:absolute;
+	z-index:5;
+	color: white;
+	font-size:40px;
+	text-align: center;
+	display: none;
+}
+
+
+#textPopup{
+	width:600px;
+	height:290px;
+	z-index:6;
+	position: absolute;
+	font-size:24px;
+	background-color: #ffffff;
+	text-align:center;
+	color:#2e418f;
+	font-family:Arial;
+	left:50px;
+	top: 90px;
+	border-radius: 20px;
+}
+
+#totalCoins{
+	width: 212px; 
+	height: 74px; 
+	left: 24px; 
+	font-size: 25px;
+	background-color: #2e418f;
+	text-align: center;
+	line-height: 74px;
+}
+
+#ava{
+	display:none; 
+	z-index:1; 
+	top:140px; 
+	left:234px; 
+	position:absolute;
+}
+#textResult{
+	width: 500px;
+	height: 100px;
+	font-size:24px;
+	font-family:Arial;
+	color: #ffffff;
+	position:absolute;
+	text-align:center;
+	left:100px;
+	top: 400px;
+}
+#canvas{
+	position:absolute;
+	
+}
+#reset{
+	top:480px;
+	left:238px;
+	border-radius:10px;
+	font-size:24px;
+	color:#ffffff;
+	border:0;
+	box-shadow: 0.1em 0.1em 7px black;
+	outline: none;
+	width: 225px;
+	height: 60px;
+	position:absolute;
+	background: darkblue;
+	display:none;
+}
+
+#popUpStartGame{
+	width: 700px;
+    height: 600px;
+	background: rgba(0, 0, 0, 0.68);
+	border-radius:15px;
+	position:absolute;
+	z-index:5;
+	color: white;
+	font-size:40px;
+	text-align: center;
+	display: none;
+}
+
+#buttonPopUpStartGame{
+	top:280px;
+	left:238px;
+	border-radius:10px;
+	font-size:20px;
+	color:#ffffff;
+	border:0;
+	box-shadow: 0.1em 0.1em 7px black;
+	outline: none;
+	width: 235px;
+	height: 60px;
+	position:absolute;
+	background: darkblue;
+	z-index:6;
+	padding-left: 20px;
+	text-align: left;
+}
+
+#textPopUpStartGame{
+	width:600px;
+	height:290px;
+	z-index:6;
+	position: absolute;
+	font-size:17px;
+	background-color: #ffffff;
+	text-align:center;
+	color:#2e418f;
+	font-family:Arial;
+	left:50px;
+	top: 90px;
+	border-radius: 20px;
+}
+button:hover, input:hover{
+	cursor:pointer;
+}
+
+@keyframes lighter {
+	100% { opacity: 1; }
+	0% { opacity: .5; }
+}
+
+@-webkit-keyframes lighter {
+	100% { opacity: 1; }
+	0% { opacity: .5; }
+}
+
+
+

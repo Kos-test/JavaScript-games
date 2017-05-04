@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>My project</title>
+		<script src="/platform/Platform.js"></script>
+		<script src="/platform/BaseAbstractApp.js"></script>
+		<script src="index.js"></script>
+    </head>
+    <body id = "bodySize" style = "transform-origin: top left;">
+		
+		<input id="reset" type="button" value="Сыграть еще" onclick="reset();">
+		
+		<div id="line"></div>
+		<div id="noy">
+		<div id="avaUser1"><div id="nameUser" style="margin-top:190px; color:black;font-size:22px; margin-left:-4px;"><strong id="u1" style="font-family: Arial;">Вова<br> Иванов</strong></div></div>
+		<div id="no"><strong id="textNo" style="font-family: Arial;">НИЧЬЯ</strong></div>
+		<div id="avaRobot1"><div id="nameComp" style = "margin-top:190px; color:black;font-size:22px; font-family: Arial;"><strong id="n1"><br> </strong></div></div>
+		</div>
+		
+		
+		<div id="lost">
+		<div id="avaUser2"><div id="nameUser" style="margin-top:190px; color:black;font-size:22px"><strong id="u2" style="font-family: Arial;">Вова<br> Иванов</strong></div></div>
+		<div id="los"><strong id="losName" style="font-family: Arial;">Вова<br> ты проиграл...</strong></div>
+		<div id="avaRobot2"><div id="nameComp" style = "margin-top:190px; color:black;font-size:22px; font-family: Arial;"><strong id="n2" style="font-family: Arial;"><br></strong></div></div>
+		</div>
+		
+		
+		<div id="win">
+		<div id="avaUser3"><div id="nameUser" style="margin-top:190px; color:black;font-size:22px"><strong id="u3" style="font-family: Arial;">Вова<br> Иванов</strong></div></div>
+		<div id="yes">
+		<strong id="place" style="color:red; font-size:35px; font-family: Arial;"></strong> <strong id="place2" style="color:#374e7d; font-size:22px; font-family: Arial;"></strong>
+		</div>
+		<div id="avaRobot3"><div id="nameComp" style ="margin-top:190px; color:black;font-size:22px; font-family: Arial;"><strong id="n3" style="font-family: Arial;"><br> </strong></div></div>
+		</div>
+	
+		<div id ="all">
+		<div id = "user">
+			<div id = "userAva"></div>
+			<div id = "userName">
+			<strong id="userS" style = "font-size: 18px; font-family: Arial;"><br> </strong>
+			</div>
+		</div>	
+		
+		<div id = "robot">
+			<div id = "ava"></div>
+			<div id ="robotName">
+			<strong id="nameRandom"  style="font-family: Arial;"></strong>
+			</div>
+		</div>
+			<div id = "zor">
+              <input id = "1" type="button" value= "  " onclick="clickB('1');" style="margin-top:21px;">
+			  <input id = "2" type="button" value= "  " onclick="clickB('2');" style="margin-top:21px;">
+			  <input id = "3" type="button" value= "  " onclick="clickB('3');" style="margin-top:21px;">
+              <input id = "4" type="button" value= "  " onclick="clickB('4');">
+			  <input id = "5" type="button" value= "  " onclick="clickB('5');">
+			  <input id = "6" type="button" value= "  " onclick="clickB('6');">
+              <input id = "7" type="button" value= "  " onclick="clickB('7');">
+			  <input id = "8" type="button" value= "  " onclick="clickB('8');">
+			  <input id = "9" type="button" value= "  " onclick="clickB('9');">	
+			 </div>
+       </div>
+	   
+	   <script> 
+	   var bodyEl = document.getElementById('bodySize');
+			var ew = bodyEl.offsetWidth;
+			var resultActual = ew/700; 
+			bodyEl.style.transform = 'scale('+ resultActual + ')'; 
+			window.onresize = function() { 
+			var winSize = bodyEl.offsetWidth;
+			var result = winSize/700; 
+			bodyEl.style.transform = 'scale('+ result + ')'; 
+		}
+	   
+	   
+		avaRandom();
+	   </script>
+		
+    </body>
+
+</html>

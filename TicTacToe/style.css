@@ -1,0 +1,188 @@
+input{
+height: 103px;
+width: 103px;
+border: 0;
+font-size: 0px;
+color: black;
+background: #f7f9fe;
+outline:none;
+margin-bottom: 8px;
+margin-left: 5px;
+float: center;
+background-position:5px;
+} 
+
+h2{
+	color: blue;
+	margin-left: 37%;
+}
+
+body {
+	margin: 0;
+}
+
+#zor{
+	height: 335px;
+	width: 600px;
+	margin-left: 180px;
+}
+
+#all{
+	width:700px;
+	height: 368px;
+	background: url(bg.png);
+}
+
+#win{
+	width: 700px;
+	height: 368px;
+	background: url(img/bgWin.png);
+	display: none;
+	position:fixed;
+	z-index:998;
+	text-align: center;
+}
+#lost{
+	width: 700px;
+	height: 368px;
+	background: url(img/bgLost.png);
+	display: none;
+	position:fixed;
+	z-index:998;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+#noy{
+	width: 700px;
+	height: 368px;
+	background: url(img/bgNoy.png);
+	display: none;
+	position:fixed;
+	z-index:998;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+
+#userAva{
+	background: url(randomAva/2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	height: 151px; 
+	width: 140px; 
+	
+	
+}
+#userName{
+	text-align:center;
+	margin-top:11px;
+	margin-right:5px;
+}
+
+#ava{
+	height:151px; 
+	width: 140px;
+	margin-left: 9px;	
+	background: url(randomAva/3.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	
+}
+
+#robotName{
+	text-align:center;
+	margin-top:10px;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+#user{
+	height: 210px; 
+	width: 150px; 
+	margin-left: 18px;
+	float:left;
+	margin-top: 18px;
+}
+
+#robot{
+	height:210px; 
+	width: 150px; 
+	float: right; 
+	margin-top: 18px; 
+	margin-right: 18px;
+}
+#avaUser1, #avaUser2, #avaUser3{
+	background: url(randomAva/2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	height: 187px; 
+	width: 165px;
+	margin-left:48px;
+	margin-top:50px;
+	float:left;
+}
+#avaRobot1, #avaRobot2, #avaRobot3 {
+	background: url(randomAva/4.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	height: 187px; 
+	width: 165px;
+	margin-right:46px;
+	margin-top:50px;
+	float: right;
+}
+
+#no{
+	float:left;
+	margin-top:120px;
+	margin-left: 70px;
+	color: red;
+}
+#los{
+	float:left;
+	margin-top:115px;
+	margin-left: 50px;
+	color: red;
+	font-size:25px;
+}
+
+#yes{
+	float:left;
+	margin-top:88px;
+	margin-left: 71px;
+}
+
+#line{
+	width: 6px;
+	height: 334px;
+	background: red;
+	display: none;
+	position:absolute;
+	z-index:888;
+	top: 20px;
+	left: 343px;	
+}
+
+#reset{
+	height:58px;
+	width: 224px;
+	box-shadow: 0.1em 0.1em 7px black;
+	z-index: 999;
+	position:absolute;
+	background: #d54142;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	top: 286px;
+	left: 230px;
+	border-radius:3px;
+	display: none;
+}
+

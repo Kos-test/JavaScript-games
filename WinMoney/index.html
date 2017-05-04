@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>ATM</title>
+		<script src="/platform/Platform.js"></script>
+		<script src="/platform/BaseAbstractApp.js"></script>
+		<script src="index.js"></script>
+
+    </head>
+    <body id="body" style = "transform-origin: top left;">
+	<div id="stop" onselectstart="return false"><span id="text"></span></div>
+	<div id = "delayBlock"><span id="deleyTreeSec"></span></div>
+	</div>
+	
+        <div style="width: 700px; height: 368px; overflow: hidden; background: url('img/bg.png')">
+            <img alt="5 dollar" src="img/5.jpg" class="SnowExample" id="five" onclick="return false" onselectstart="return false" onmousedown="start(5, 'five')" ondblclick="return false" onmouseup="return false"/>
+            <img alt="1 dollar" src="img/1.jpg" class="SnowExample" id="one" onclick="return false" onselectstart="return false" onmousedown="start(1, 'one');" ondblclick="return false"/>
+            <img alt="50 dollar" src="img/50.jpg" class="SnowExample" id="fif" onclick="return false" onselectstart="return false" onmousedown="start(50, 'fif');" ondblclick="return false"/>
+            <img alt="100 dollar" src="img/100.jpg" class="SnowExample" id="han" onclick="return false" onselectstart="return false" onmousedown="start(100, 'han');" ondblclick="return false"/>
+			<img alt="2 dollar" src="img/2.jpg" class="SnowExample" id="two" onclick="return false" onselectstart="return false" onmousedown="start(2, 'two');" ondblclick="return false"/>
+			<img alt="10 dollar" src="img/10.jpg" class="SnowExample" id="ten" onclick="return false" onselectstart="return false" onmousedown="start(10, 'ten');" ondblclick="return false"/>
+			<img alt="20 dollar" src="img/20.jpg" class="SnowExample" id="tv" onclick="return false" onselectstart="return false" onmousedown="start(20, 'tv');" ondblclick="return false"/>
+			
+			<img alt="100 rub" src="img/100R.jpg" class="Rubles" id="sto" onclick="" onselectstart="return false" onmousedown="start(-50, 'sto');" ondblclick="return false"/>
+			<img alt="500 rub" src="img/500R.jpg" class="Rubles" id="fifRub" onclick="" onselectstart="return false" onmousedown="start(-70, 'fifRub');" ondblclick="return false"/>
+			<img alt="1000 rub" src="img/1000R.jpg" class="Rubles" id="hanRub" onclick="" onselectstart="return false" onmousedown="start(-100, 'hanRub');" ondblclick="return false"/>
+			<img alt="5000 rub" src="img/5000R.jpg" class="Rubles" id="fiveRub" onclick="" onselectstart="return false" onmousedown="start(-200, 'fiveRub');" ondblclick="return false"/>
+			
+			<img alt="100 rub" src="img/100R.jpg" class="RublesPlus" id="stoPlus" onclick="" onselectstart="return false" onmousedown="start(-50, 'stoPlus');" ondblclick="return false"/>
+			<img alt="500 rub" src="img/500R.jpg" class="RublesPlus" id="fifRubPlus" onclick="" onselectstart="return false" onmousedown="start(-70, 'fifRubPlus');" ondblclick="return false"/>
+			<img alt="1000 rub" src="img/1000R.jpg" class="RublesPlus" id="hanRubPlus" onclick="" onselectstart="return false" onmousedown="start(-100, 'hanRubPlus');" ondblclick="return false"/>
+			<img alt="5000 rub" src="img/5000R.jpg" class="RublesPlus" id="fiveRubPlus" onclick="" onselectstart="return false" onmousedown="start(-200, 'fiveRubPlus');" ondblclick="return false"/>
+			
+			
+			<span id="timer">00:20 сек</span>
+			<div ><span id="score">Баланс: 0$</span></div>
+            </div>
+			<script>
+			
+			//time();
+			
+			
+			var bodyEl = document.getElementById('body');
+			var ew = bodyEl.offsetWidth;
+			var resultActual = ew/700; 
+			bodyEl.style.transform = 'scale('+ resultActual + ')'; 
+			window.onresize = function() { 
+			var winSize = bodyEl.offsetWidth;
+			var result = winSize/700; 
+			bodyEl.style.transform = 'scale('+ result + ')'; 
+		}
+			
+				
+			</script>
+    </body>
+
+</html>
+
+
+
+
+

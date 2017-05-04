@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="/frontend/js/engine-of-canvas.js"></script>
+    <script src="/platform/Platform.js"></script>
+    <script src="/platform/BaseAbstractApp.js"></script>
+    <title>Loterry</title>
+</head>
+<body id="all" style = "transform-origin: top left;">
+<form id="forma" name="formSend" method="post" action="#" enctype="multipart/form-data" class="onServ">
+    <input type="hidden" name="bonus" value="" class="onServ" id="main">
+    <input type="hidden" name="game_id" value="100" class="onServ">
+    <input type="submit" name="sender" value="send" id="buttonSubmit" class="onServ" hidden>
+</form>
+
+<div id="allButtonsField">
+
+    <input type="button" class="sevenLine" value="50" style="left: 24px; top: 32px">
+    <input type="button" class="sevenLine" value="50" style="left: 246px; top: 32px">
+    <input type="button" class="sevenLine" value="50" style="left: 466px; top: 32px">
+
+    <input type="button" class="sixLine" value="35" style="left: 24px; top: 100px">
+    <input type="button" class="sixLine" value="35" style="left: 246px; top: 100px">
+    <input type="button" class="sixLine" value="35" style="left: 466px; top: 100px">
+
+    <input type="button" class="fiveLine" value="25" style="left:24px; top: 168px">
+    <input type="button" class="fiveLine" value="25" style="left: 246px; top: 168px">
+    <input type="button" class="fiveLine" value="25" style="left: 466px; top: 168px">
+
+    <input type="button" class="fourLine" value="20" style="left: 24px; top: 236px">
+    <input type="button" class="fourLine" value="20" style="left: 246px; top: 236px">
+    <input type="button" class="fourLine" value="20" style="left: 466px; top: 236px">
+
+    <input type="button" class="treeLine" value="15" style="left:24px; top: 304px">
+    <input type="button" class="treeLine" value="15" style="left: 246px; top: 304px">
+    <input type="button" class="treeLine" value="15" style="left: 466px; top: 304px">
+
+    <input type="button" class="twoLine" value="10" style="left: 24px; top: 372px">
+    <input type="button" class="twoLine" value="10" style="left: 246px; top: 372px">
+    <input type="button" class="twoLine" value="10" style="left: 466px; top: 372px">
+
+    <input type="button" class="oneLine" value="5" style="left: 24px; top: 440px">
+    <input type="button" class="oneLine" value="5" style="left: 246px; top: 440px">
+    <input type="button" class="oneLine" value="5" style="left: 466px; top: 440px">
+
+    <div id="totalCoins" disabled>0 <img src="buttons/coinsButton.png" style="top: 5px; position:relative;"></div>
+    <button id="catchMyMoney" onclick="giveMyMoney()" style="width: 432px; height: 74px; left: 246px;  background: url('buttons/pickupButton.png');"></button>
+	</div>
+	
+	<div id="userPoor">
+	<div id="textPopup"><img src='buttons/coinsButton.png' style='top:210px; left:275px; position:absolute;'>
+	</div>
+	</div>
+	
+	<div id="popUpStartGame">
+	<div id="textPopUpStartGame"></div>
+	<button id="buttonPopUpStartGame" onclick="startGame();"></button>
+	<img src='buttons/coinsButton.png' width="30px" height="30px" style='z-index:6; position: absolute; top: 293px; left: 430px;'>
+	</div>
+
+	<script src="index.js"></script>
+	<div id="result">
+		<div id="textResult"></div>
+		<button id="reset" onclick="resetGame();"></button>
+	</div>
+	<canvas id="canvas" width="700px"; height="368"; hidden></canvas>
+	<img id="ava" src="#" height="230px" width="230px" hidden>
+	<img src="buttons/coinsButton.png" id="coin" hidden></img>
+	
+ 
+ 
+<script>
+
+    blockAllElements();
+    document.getElementsByClassName('oneLine')[2].disabled = false;
+    document.getElementsByClassName('oneLine')[0].disabled = false;
+    document.getElementsByClassName('oneLine')[1].disabled = false;
+	document.getElementsByClassName('onServ')[0].disabled = false;
+	document.getElementsByClassName('onServ')[1].disabled = false;
+	document.getElementsByClassName('onServ')[2].disabled = false;
+	document.getElementsByClassName('onServ')[3].disabled = false;
+    document.getElementById('catchMyMoney').disabled = true;
+	
+	var bodyEl = document.getElementById('all');
+	var ew = bodyEl.offsetWidth;
+	var resultActual = ew/700; 
+	bodyEl.style.transform = 'scale('+ resultActual + ')'; 
+	window.onresize = function() { 
+	var winSize = bodyEl.offsetWidth;
+	var result = winSize/700; 
+	bodyEl.style.transform = 'scale('+ result + ')'; 
+		}
+</script>
+
+</body>
+</html>
